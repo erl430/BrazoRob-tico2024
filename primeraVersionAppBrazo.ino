@@ -36,11 +36,9 @@ void loop()
         break;
       case 231:  // subir hombro
         Serial.println("Se sube el hombro");
-        alarmaActivada = true;
         break;
       case 250:  // bajar hombro
         Serial.println("Se baja el hombro");
-        alarmaActivada = false;
         break;
       case 218:  // girar base hacia la derecha
         Serial.println("Se gira hacia la derecha");
@@ -53,13 +51,4 @@ void loop()
         break;
     }
   }
- 
- /**
-  if(Serial.available())  // Si llega un dato por el monitor serial se envía al puerto BT
-  {
-    Serial.println("Serial available");
-     BT.write(Serial.read());
-     Serial.println("Serial: " +Serial.read());
-  }
-  **/
 }
